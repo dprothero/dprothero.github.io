@@ -1,0 +1,62 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Summary of Qualifications</h3>
+  </div>
+  <div class="panel-body">
+    <strong>Senior software architect</strong> and developer who is <strong>passionate about technology</strong> with 
+    <strong>20 years</strong> of experience building solutions and <strong>leading</strong> technical teams. More than
+    just an architect –the <strong>go-to person</strong> for the most difficult technical challenges. Repeatedly entrusted 
+    with building and maintaining <strong>high-traffic</strong>, public facing <strong>web sites and applications</strong>.
+  </div>
+</div>
+
+<div data-ng-include="'resume-expertise.html'"></div>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Professional Experience</h3>
+  </div>
+  <div class="panel-body">
+    <div id="job-cea" data-ng-include="'resume-job-cea.html'"></div>
+    <div id="job-lcl" data-ng-include="'resume-job-lcl.html'"></div>
+    <div id="job-trc" data-ng-include="'resume-job-trc.html'"></div>
+    <div id="job-pc" data-ng-include="'resume-job-pc.html'"></div>
+    <div id="job-argos" data-ng-include="'resume-job-argos.html'"></div>
+    <div id="resume-job-cds" data-ng-include="'resume-job-cds.html'"></div>
+  </div>
+</div>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Education</h3>
+  </div>
+  <div class="panel-body">
+    <div><strong>Educational Coursework in Computer Science, 1994</strong>
+    </div>
+    <div>Western Washington University, Bellingham WA</div>
+    <div class="education-spacer"></div>
+    <div><strong>AA in Business Administration, 1993</strong>
+    </div>
+    <div>Centralia Community College, Centralia WA</div>
+  </div>
+</div>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Keywords</h3>
+  </div>
+  <div class="panel-body">
+    <table class="table">
+      <tbody class="hidden-xs">
+        <tr data-ng-repeat="keywordRow in keywordRows">
+          <td data-ng-repeat="keyword in keywordRow">{{keyword}}</td>
+        </tr>
+      </tbody>
+      <tbody class="visible-xs">
+        <tr data-ng-repeat="keywordRow in keywordRowsXs">
+          <td data-ng-repeat="keyword in keywordRow">{{keyword}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,92 @@
+@media screen {
+  .container {
+    margin-top: 70px;
+  }
+}
+
+body {
+  background-color: white;
+}
+
+.well {
+  background-color: #eeeeee;
+}
+
+.thumbnail-float-left {
+  float: left;
+  margin-right: 40px;
+}
+
+.sidebar-section {
+  font-size: smaller;
+  padding-bottom: 10px;
+}
+
+.sidebar-section-glyph {
+  float: left;
+}
+
+.sidebar-section-glyph img {
+  width: 16px;
+  height: 16px;
+}
+
+.sidebar-section-group {
+  padding-left: 20px;
+}
+
+.sidebar-section-header {
+  font-weight: bold;
+}
+
+.name-heading {
+  margin-top: 0;
+  padding-bottom: 20px;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.company {
+  width: 80%;
+  float: left;
+  height: 24px;
+}
+
+.timespan {
+  width: 20%;
+  float: left;
+  text-align: right;
+}
+
+.job-title {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.list-group-item {
+  font-size: larger;
+}
+
+.education-spacer {
+  padding-bottom: 10px;
+}
+
+.dropdown-toggle:hover {
+  cursor: pointer;
+}
+
+.jobhighlight {
+  background-color: yellow;
+}
+
+@media (max-width: 767px) {
+  h4 {
+    font-size: 90%;
+  }
+
+  .job-title {
+    font-size: 90%;
+  }
+}

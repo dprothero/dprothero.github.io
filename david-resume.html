@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html data-ng-app="resumeApp">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="http://www.prothero.com/yeti/bootstrap.min.css" />
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="navbar navbar-inverse navbar-fixed-top" data-ng-controller="MainController">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">David R Prothero</a>
+    </div>
+    <div class="navbar-collapse collapse navbar-inverse-collapse">
+      <ul class="nav navbar-nav">
+        <li ng-class="{active: currentView == 'resume-root.html'}"><a href="#/">Resume</a>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown">Professional Experience <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#/?scrollTo=job-cea">California Earthquake Authority</a>
+            </li>
+            <li><a href="#/?scrollTo=job-lcl">LooselyCoupledLabs.com</a>
+            </li>
+            <li><a href="#/?scrollTo=job-trc">Therapeutic Research Center</a>
+            </li>
+            <li><a href="#/?scrollTo=job-pc">Prothero Consulting</a>
+            </li>
+            <li><a href="#/?scrollTo=job-argos">Argos Software</a>
+            </li>
+            <li><a href="#/?scrollTo=job-cds">Cascade Data Solutions</a>
+            </li>
+          </ul>
+        </li>
+        <li ng-class="{active: currentView == 'bio.html'}"><a href="#/bio">Bio</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://plnkr.co/edit/UolzVm9V0lIlxv99r0Fm" target="_blank">View Source</a>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown">External Links <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://looselycoupledlabs.com/" target="_blank">Blog</a>
+            </li>
+            <li><a href="https://github.com/dprothero?tab=repositories" target="_blank">GitHub</a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/davidprothero" target="_blank">LinkedIn</a>
+            </li>
+            <li><a href="http://twitter.com/dprothero" target="_blank">Twitter</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-3 visible-lg-block">
+        <div class="well">
+          <img src="http://www.prothero.com/img/portrait500.jpg" width="220" height="220" alt="David Prothero" class="thumbnail img-responsive" />
+
+          <div data-ng-include="'contact-details.html'"></div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 hidden-lg">
+        <h1 class="name-heading visible-xs-block">David R Prothero</h1>
+        <div class="well row">
+          <div class="col-sm-6 hidden-xs">
+            <h1 class="name-heading">David R Prothero</h1>
+          </div>
+          <div class="col-xs-3">
+            <img src="http://www.prothero.com/img/portrait200.jpg" width="200" height="200" alt="David Prothero" class="thumbnail img-responsive" />
+          </div>
+          <div class="col-xs-7 col-sm-3" data-ng-include="'contact-details.html'"></div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-lg-9">
+        <h1 class="name-heading visible-lg-block">David R Prothero</h1>
+        <div data-ng-view=""></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script data-require="jquery@*" data-semver="2.1.1" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://www.prothero.com/js/bootstrap.min.js"></script>
+  <script src="https://code.angularjs.org/1.3.0-beta.5/angular.js" data-semver="1.3.0-beta.5" data-require="angular.js@*"></script>
+  <script data-require="angular-route@*" data-semver="1.2.17" src="http://code.angularjs.org/1.2.17/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="MainController.js"></script>
+  <script src="ResumeController.js"></script>
+</body>
+
+</html>
