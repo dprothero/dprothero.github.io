@@ -82,7 +82,14 @@
         "DevOps",
         "SMS",
         "Active Directory",
-        "SPA"
+        "SPA",
+        "Python",
+        "Django",
+        "Twilio",
+        "Jenkins",
+        "Docker",
+        "Wagtail",
+        "Vue.js"
       ]
     };
     data.keywords.sort(function(a, b) {
